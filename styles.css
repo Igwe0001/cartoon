@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+
+  --background-green: #0eaf59;
+  --background-blue: #9ce3f2;
+  --background-lemon: #85c747;
+  --button-red: #ff412f;
+  --text-blue: #095bb0;
+  --text-red: #ff4535;
+  --card-yellow: #fff093;
+  --card-purple: #fd84b6;
+  --talker-inner-border: #1f2427;
+  --talker-outer-border: #ff412f;
+  --images-background: #ff822a;
+  --black: #000;
+  --white: #fff;
+
+  /* FONTS */
+  --primary-font: "Josefin Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: var(--background-blue);
+}
+
+.top-blub {
+  /* background-color: #ff412f; */
+  width: 25rem;
+  height: 30rem;
+}
+
+.square {
+  background-color: #ff412f;
+  height: inherit;
+  margin-top: -0.4rem;
+}
+
+/* Section styles */
+
+section {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--images-background);
+}
+
+.section {
+  /* max-width: 90rem; */
+  margin: auto;
+  max-width: 50rem;
+}
+
+.images {
+  margin-bottom: 1rem;
+  min-height: 26.5rem;
+  background-color: var(--white);
+  border: 1.5rem solid var(--white);
+  box-shadow: 3px 6px 4px -1px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 3px 6px 4px -1px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 3px 6px 4px -1px rgba(0, 0, 0, 0.67);
+}
+
+.image {
+  /* width: 40rem; */
+  height: 20rem;
+  /* outline: 1px solid; */
+  background-color: grey;
+}
+
+.image-1 {
+  background-image: url("./images/group.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.images span {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  /* padding-top: 20.5rem; */
+}
+
+.image-2 {
+  background-image: url("./images/group.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: var(--card-yellow);
+  width: 100%;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.footer-data {
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 90rem;
+}
+
+form {
+  width: 100%;
+  background: #fff;
+  border-radius: 0.6rem;
+  outline: 1px solid;
+  max-width: 60rem;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+form div i {
+  font-size: 2rem;
+}
+
+input {
+  border: none;
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+input::placeholder {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--black);
+}
+
+.footer-buttons {
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 59rem;
+}
+
+.buttons-group-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.button {
+  /* width: 45%; */
+}
+
+.button a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.8rem 0rem;
+  border: 0.5rem solid var(--white);
+  border-radius: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.button-1 a {
+  background-color: var(--card-purple);
+}
+
+.button-2 a {
+  background-color: var(--background-blue);
+}
+
+.button-3 a {
+  background-color: var(--button-red);
+}
+
+.button span {
+  display: block;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.buttons-group-2 {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.copywrite {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 760px) {
+  .section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 100rem;
+  }
+
+  .images {
+    width: 40rem;
+  }
+
+  .buttons-group-1{
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  /* .image {
+    width: 40rem;
+  } */
+}

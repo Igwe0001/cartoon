@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="hero">
+<!-- <img src="./images/chef.png" alt=""> -->
+
+        <button>E/I - PROGRAMS IN PRODUCTION</button>
+    </header>
+    <section>
+        <div class="section">
+            <div class="images">
+                <div class="image image-1">
+                </div>
+                <span>All the Host of Yes I Can!</span>
+            </div>
+            <div class="images">
+                <div class="image image-2">
+                </div>
+                <span>Host Angeline Interviewing Cinematographer Hasan Nadji For Pilot program</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-data">
+            <h1>Meet Our Hosts</h1>
+            <form action="">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="https://vimeo.com/81796426?">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </form>
+            <div class="footer-buttons">
+                <div class="buttons-group-1">
+                    <div class="button button-1">
+                        <a href="mailto:lamonde@yesicanedutainment.com" target="_blank"
+                            rel="noopener noreferrer">Contact LaMonde
+                        </a>
+                        <span>lamonde@yesicanedutainment.com</span>
+                    </div>
+                    <div class="button button-2">
+                        <a href="mailto:lamonde@yesicanedutainment.com" target="_blank"
+                            rel="noopener noreferrer">Contact Bob
+                        </a>
+                        <span>bob@yesicanedutainment.com</span>
+                    </div>
+                </div>
+                <div class="buttons-group-2">
+                    <div class="button button-3">
+                        <a href="http://yesicanedutainment.com" target="_blank">Website
+                        </a>
+                        <span>yesicanedutainment.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite">
+                <p>Copyright <span id="copyright-year"></span> Yes I Can LLC All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        (() => document.getElementById("copyright-year").textContent = new Date().getFullYear())();
+    </script>
+</body>
+
+</html>
