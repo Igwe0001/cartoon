@@ -39,6 +39,44 @@ body {
 
 header {
   background-color: var(--background-blue);
+  position: relative;
+  min-height: 100vh;
+  height: 120rem;
+}
+
+.sky-top-image {
+  width: 50%;
+}
+
+.sky-top{
+  width: 100%;
+  margin-top: -12rem;
+  margin-left: -12rem;
+}
+
+.sky-bottom-image {
+  width: 50%;
+  margin-right: -5rem;
+}
+
+.sky-bottom {
+  outline: 1px solid;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 15rem;
+  display: flex;
+  justify-content: end;
+}
+
+.grass-image {
+  width: 100%;
+}
+
+.grass {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -1rem;
 }
 
 .top-blub {
@@ -85,7 +123,7 @@ section {
 }
 
 .image-1 {
-  background-image: url("./images/group.jpg");
+  background-image: url("./images/group.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,7 +137,7 @@ section {
 }
 
 .image-2 {
-  background-image: url("./images/group.jpg");
+  background-image: url("./images/interview.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -220,6 +258,10 @@ input::placeholder {
   margin-top: 1.5rem;
 }
 
+.copywrite p {
+  text-align: center;
+}
+
 @media screen and (min-width: 760px) {
   .section {
     display: flex;
@@ -232,7 +274,7 @@ input::placeholder {
     width: 40rem;
   }
 
-  .buttons-group-1{
+  .buttons-group-1 {
     justify-content: space-between;
     flex-direction: row;
   }
