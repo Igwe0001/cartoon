@@ -42,31 +42,80 @@ header {
   position: relative;
   min-height: 100vh;
   height: 120rem;
+  overflow: hidden;
 }
 
 .sky-top-image {
-  width: 50%;
+  max-width: 60%; /* Makes sure the image takes 100% width of its parent container */
+  height: auto; /* Allows the image to maintain its aspect ratio */
 }
 
-.sky-top{
+.sky-top {
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  /* z-index: -1; */
+  max-width: 100%; /* Ensures the image doesn't exceed its natural size */
+  height: auto; /* Ensures the image doesn't exceed its natural size */
+}
+
+.ballon {
+  max-width: 100%;
+  position: absolute;
+  height: auto;
+  top: -2rem;
+  left: 0;
+}
+
+.ballon img {
+  max-width: 20%;
+}
+
+.text-image {
+  outline: 1px solid red;
+  max-width: 100%;
+  position: absolute;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  top: -5rem;
+}
+
+.text-image img {
+  max-width: 80%;
+}
+
+.header-button {
   width: 100%;
-  margin-top: -12rem;
-  margin-left: -12rem;
+  position: relative;
+  z-index: 1;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid;
+}
+
+.header-button button{
+  padding: 1.2rem;
+  border: none;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--button-red);
 }
 
 .sky-bottom-image {
-  width: 50%;
+  width: 60%;
   margin-right: -5rem;
 }
 
 .sky-bottom {
-  outline: 1px solid;
-  width: 100%;
+  /* outline: 1px solid; */
+  max-width: 100%;
   position: absolute;
   right: 0;
-  bottom: 15rem;
-  display: flex;
-  justify-content: end;
+  bottom: 30rem;
+  right: -35rem;
 }
 
 .grass-image {
