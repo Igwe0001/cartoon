@@ -35,13 +35,13 @@ body {
   font-size: 1.6rem;
   width: 100%;
   height: 100%;
+  font-family: var(--primary-font);
 }
 
 header {
   background-color: var(--background-blue);
   position: relative;
   min-height: 100vh;
-  height: 120rem;
   overflow: hidden;
 }
 
@@ -83,6 +83,7 @@ header {
 
 .text-image img {
   max-width: 80%;
+  min-width: 29rem;
 }
 
 .header-button {
@@ -93,15 +94,64 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 1px solid;
+  /* outline: 1px solid; */
 }
 
-.header-button button{
+.header-button button {
   padding: 1.2rem;
   border: none;
   font-weight: bold;
   color: var(--white);
   background-color: var(--button-red);
+}
+
+.yellow-card,
+.pink-card {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.card-container {
+  width: 100%;
+  margin-top: 15rem;
+  margin-bottom: 12rem;
+}
+
+.yellow-card {
+  transform: rotate(2deg);
+  display: flex;
+  justify-content: center;
+}
+
+.pink-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12rem;
+}
+
+.yellow-card img {
+  width: 100%;
+  object-fit: cover;
+  min-width: 34rem;
+  max-width: 90rem;
+}
+
+.pink-card img {
+  width: 70%;
+  min-width: 28rem;
+  max-width: 60rem;
+}
+
+.kite {
+  width: 100%;
+  position: absolute;
+  top: 45rem;
+  right: -85%;
+}
+
+.kite img {
+  width: 15%;
 }
 
 .sky-bottom-image {
@@ -114,8 +164,34 @@ header {
   max-width: 100%;
   position: absolute;
   right: 0;
-  bottom: 30rem;
-  right: -35rem;
+  bottom: 5rem;
+  right: -25rem;
+}
+
+.career-images-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  justify-content: center;
+  width: 100%;
+}
+
+.career-images {
+  width: 60%;
+  max-width: 60rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.div {
+  width: 60%;
+  max-width: 30rem;
+}
+
+.div img {
+  width: 100%;
 }
 
 .grass-image {
@@ -126,6 +202,7 @@ header {
   position: absolute;
   bottom: 0;
   margin-bottom: -1rem;
+  width: 100%;
 }
 
 .top-blub {
@@ -182,6 +259,7 @@ section {
   display: block;
   text-align: center;
   padding: 1rem;
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
   /* padding-top: 20.5rem; */
 }
 
@@ -263,10 +341,6 @@ input::placeholder {
   width: 100%;
 }
 
-.button {
-  /* width: 45%; */
-}
-
 .button a {
   display: block;
   text-decoration: none;
@@ -294,6 +368,7 @@ input::placeholder {
   display: block;
   margin-top: 0.8rem;
   text-align: center;
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
 }
 
 .buttons-group-2 {
@@ -309,6 +384,16 @@ input::placeholder {
 
 .copywrite p {
   text-align: center;
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+}
+
+@media screen and (min-width: 560px) {
+  .card-container {
+    margin: 25rem 0 30rem;
+  }
+  .sky-bottom {
+    right: -32rem;
+  }
 }
 
 @media screen and (min-width: 760px) {
@@ -328,7 +413,18 @@ input::placeholder {
     flex-direction: row;
   }
 
-  /* .image {
-    width: 40rem;
-  } */
+  .card-container {
+    margin: 35rem 0 40rem;
+  }
+
+  .sky-bottom {
+    right: -40rem;
+    bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .sky-bottom {
+    bottom: 25rem;
+  }
 }
