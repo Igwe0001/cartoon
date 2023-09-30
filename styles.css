@@ -46,8 +46,8 @@ header {
 }
 
 .sky-top-image {
-  max-width: 60%; /* Makes sure the image takes 100% width of its parent container */
-  height: auto; /* Allows the image to maintain its aspect ratio */
+  max-width: 60%; 
+  height: auto; 
 }
 
 .sky-top {
@@ -55,8 +55,8 @@ header {
   top: -5rem;
   left: -5rem;
   /* z-index: -1; */
-  max-width: 100%; /* Ensures the image doesn't exceed its natural size */
-  height: auto; /* Ensures the image doesn't exceed its natural size */
+  max-width: 100%;
+  height: auto; 
 }
 
 .ballon {
@@ -86,6 +86,30 @@ header {
   min-width: 29rem;
 }
 
+.social {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 90rem;
+  padding: 4rem 2rem;
+  margin: auto;
+  height: 5rem;
+  /* outline: 1px solid; */
+  display: flex;
+align-items: center;
+justify-content: end;
+}
+
+.social a {
+  display: block;
+  text-decoration: none;
+}
+
+.social i {
+  font-size: 4rem;
+  color: var(--button-red);
+}
+
 .header-button {
   width: 100%;
   position: relative;
@@ -113,9 +137,8 @@ header {
 }
 
 .card-container {
-  width: 100%;
-  margin-top: 15rem;
-  margin-bottom: 12rem;
+  width: 90%;
+  margin: 15rem auto 12rem;
 }
 
 .yellow-card {
@@ -127,7 +150,7 @@ header {
 .pink-card {
   display: flex;
   justify-content: center;
-  margin-bottom: 12rem;
+  /* margin-bottom: 12rem; */
 }
 
 .yellow-card img {
@@ -137,9 +160,31 @@ header {
   max-width: 90rem;
 }
 
+.pink-chat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
 .pink-card img {
   width: 70%;
   min-width: 28rem;
+  max-width: 60rem;
+}
+
+.chat-bubble {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.chat-bubble img {
+  width: 30%;
+  min-width: 15rem;
   max-width: 60rem;
 }
 
@@ -206,13 +251,12 @@ header {
 }
 
 .top-blub {
-  /* background-color: #ff412f; */
   width: 25rem;
   height: 30rem;
 }
 
 .square {
-  background-color: #ff412f;
+  background-color: var(--button-red);
   height: inherit;
   margin-top: -0.4rem;
 }
@@ -297,6 +341,11 @@ form {
   border-radius: 0.6rem;
   outline: 1px solid;
   max-width: 60rem;
+}
+
+form a {
+  text-decoration:none ;
+  color: var(--black);
 }
 
 form div {
@@ -389,7 +438,7 @@ input::placeholder {
 
 @media screen and (min-width: 560px) {
   .card-container {
-    margin: 25rem 0 30rem;
+    margin: 25rem auto 20rem;
   }
   .sky-bottom {
     right: -32rem;
@@ -414,12 +463,16 @@ input::placeholder {
   }
 
   .card-container {
-    margin: 35rem 0 40rem;
+    margin: 35rem auto 30rem;
   }
 
   .sky-bottom {
     right: -40rem;
     bottom: 10rem;
+  }
+
+  .pink-chat {
+    flex-direction: row;
   }
 }
 
