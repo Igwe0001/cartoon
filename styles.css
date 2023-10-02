@@ -314,6 +314,93 @@ section {
   background-repeat: no-repeat;
 }
 
+.contact {
+  background-color: var(--white);
+}
+
+/* Contact form */
+
+.container {
+  border-radius: .5rem;
+  background-color: var(--images-background);
+  padding: .5rem;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.container form {
+  outline: none;
+padding: 2rem;
+}
+
+.contact__header {
+    background-color: var(--page-blue);
+}
+
+.contact__container {
+    margin-top: 3rem;
+}
+
+.contact__container h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.container label {
+    font-size: 1.9rem;
+    padding-top: 1rem;
+}
+
+.container input {
+  padding: 2rem;
+  border: .1rem solid var(--images-background);
+  width: 100%;
+  margin-top: .6rem;
+  margin-bottom: 1.6rem;
+  border-radius: .4rem;
+}
+
+.container input::placeholder{
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 200;
+}
+
+.container input[type="text"],
+.container select,
+.container textarea {
+  padding: 1.2rem;
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+}
+
+.container textarea {
+  margin-top: 1rem;
+  border-radius: .4rem;
+  border: 1px solid var(--images-background);
+}
+
+.container input[type="submit"] {
+  background-color: var(--images-background);
+  transition: all .3s ease;
+  color: white;
+  padding: 0;
+  width: 30%;
+  border: none;
+  font-weight: bold;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+  background-color: var(--white);
+  color: var(--page-blue);
+}
+
+
+
 /* Footer styles */
 
 footer {
@@ -346,6 +433,8 @@ form {
 form a {
   text-decoration:none ;
   color: var(--black);
+  position: relative;
+  z-index: 1;
 }
 
 form div {
