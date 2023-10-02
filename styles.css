@@ -367,6 +367,16 @@ padding: 2rem;
     font-weight: 200;
 }
 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .container input[type="text"],
 .container select,
 .container textarea {
@@ -376,10 +386,18 @@ padding: 2rem;
   width: 100%;
 }
 
+.container input:focus {
+  outline: 2px solid var(--images-background);
+}
+
 .container textarea {
   margin-top: 1rem;
   border-radius: .4rem;
   border: 1px solid var(--images-background);
+}
+
+.container textarea:focus {
+  outline: 2px solid var(--images-background);
 }
 
 .container input[type="submit"] {
@@ -394,10 +412,7 @@ padding: 2rem;
   cursor: pointer;
 }
 
-.container input[type="submit"]:hover {
-  background-color: var(--white);
-  color: var(--page-blue);
-}
+
 
 
 
