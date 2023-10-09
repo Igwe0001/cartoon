@@ -400,11 +400,12 @@ input[type="number"]::-webkit-outer-spin-button {
   outline: 2px solid var(--images-background);
 }
 
-.container input[type="submit"] {
+.container button[type="submit"] {
   background-color: var(--images-background);
   transition: all .3s ease;
   color: white;
-  padding: 0;
+  padding: 1rem;
+  margin-top: 1rem;
   width: 30%;
   border: none;
   font-weight: bold;
